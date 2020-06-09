@@ -4,7 +4,7 @@ backup = require("discord-backup"),
 client = new Discord.Client(),
 settings = {
     prefix: "b!",
-    token: "YOURTOKEN"
+    token: "process.env.secret"
 };
 
 client.on("ready", () => {
