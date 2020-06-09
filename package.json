@@ -7,11 +7,11 @@
     "lib/**/*"
   ],
   "scripts": {
+    "start": "node bot.js"
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json"
-    "start": "node bot.js"
 }
   },
   "repository": {
