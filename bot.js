@@ -4,7 +4,7 @@ backup = require("discord-backup"),
 client = new Discord.Client(),
 settings = {
     prefix: "b!",
-    token: "process.env.secret"
+    token: "YOURTOKEN"
 };
 
 client.on("ready", () => {
@@ -108,4 +108,4 @@ client.on("message", async message => {
 });
 
 //Your secret token to log the bot in. (never share this to anyone!)
-client.login(process.env.secret);
+client.login(settings.token);
