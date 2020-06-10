@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Androz2091/discord-backup.git"
+    "url": "git+https://github.com/Donster4/discord-backup.git"
   },
   "keywords": [
     "discord",
@@ -27,9 +27,9 @@
   "author": "Androz2091",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Androz2091/discord-backup/issues"
+    "url": "https://github.com/Donster4/discord-backup/issues"
   },
-  "homepage": "https://github.com/Androz2091/discord-backup#readme",
+  "homepage": "https://github.com/Donster4/discord-backup#readme",
   "dependencies": {
     "axios": "^0.19.0",
     "discord.js": "^12.0.1"
