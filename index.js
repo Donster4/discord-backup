@@ -77,6 +77,31 @@ client.on("message", async message => {
         });
     }
 
+if(command === "repeat"){
+        // Check member permissions
+        if(!message.member.hasPermission("ADMINISTRATOR")){
+            return message.channel.send(":x: | You must be an administrator of this server to request a backup!");
+        }
+        // Create the backup
+		backup.create(message.guild, {
+            jsonBeautify: true
+        }).then((backupData) => {
+            // And send informations to the backup owner
+            message.author.send("The repeated backup has been created! It will create a new backup every 24 hours! To load it, type this command on the server of your choice for today's backup: `"+settings.prefix+"load "+backupData.id+"`!");
+            message.channel.send(":white_check_mark: Backup successfully created for today. The backup ID was sent in dm!");
+        });
+        function foo(){
+    backup.create(message.guild, {
+            jsonBeautify: true
+        }).then((backupData) => {
+            // And send informations to the backup owner
+            message.author.send("The repeated backup has been created! It will create a new backup every 24 hours! To load it, type this command on the server of your choice for today's backup: `"+settings.prefix+"load "+backupData.id+"`!");
+            message.channel.send(":white_check_mark: Backup successfully created for today. The backup ID was sent in dm!");
+        });
+	}
+			setInterval(foo, 8640000);
+    }
+    
     if(command === "infos"){
         let backupID = args[0];
         if(!backupID){
