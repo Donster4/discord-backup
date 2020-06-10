@@ -108,4 +108,4 @@ client.on("message", async message => {
 });
 
 //Your secret token to log the bot in. (never share this to anyone!)
-client.login(settings.token);
+client.login(process.env.BOT_TOKEN);
